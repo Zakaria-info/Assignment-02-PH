@@ -1,41 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment-02</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="./styles.css"/>
-</head>
-<body>
-    <header class="bg-[#1A0B2E] py-4 px-6 md:px-10 text-white">
-        <nav class="flex items-center justify-between max-w-7xl mx-auto">
-            
-            <h2 class="text-2xl md:text-3xl font-bold hover:cursor-pointer">
-                Tech<span class="bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">Wave</span>
-            </h2>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="bg-[#1A0B2E]">
+    <header class="bg-[#1A0B2E] py-4 px-6 md:px-10 text-white border-b border-white/10">
+      <nav class="flex items-center justify-between max-w-7xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-bold hover:cursor-pointer">
+          Tech<span class="bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">Wave</span>
+        </h2>
 
-            <ul class="hidden md:flex gap-10 text-[#FFFFFF] font-medium">
-                <li class="hover:text-gray-300 cursor-pointer transition">About</li>
-                <li class="hover:text-gray-300 cursor-pointer transition">Episodes</li>
-                <li class="hover:text-gray-300 cursor-pointer transition">Host</li>
-            </ul>
+        <ul class="hidden md:flex gap-10 text-[#FFFFFF] font-medium">
+          <li class="hover:text-gray-300 cursor-pointer transition">About</li>
+          <li class="hover:text-gray-300 cursor-pointer transition">Episodes</li>
+          <li class="hover:text-gray-300 cursor-pointer transition">Host</li>
+        </ul>
 
-            <div class="flex items-center">
-                <button class="hidden md:flex bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-500 px-6 py-2 rounded-full font-semibold items-center gap-2 hover:cursor-pointer opacity-90 transition">
-                    Subscribe 
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                    </svg>
-                </button>
+        <div class="flex items-center">
+          <button class="hidden md:flex bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-500 px-6 py-2 rounded-full font-semibold items-center gap-2 hover:cursor-pointer opacity-90 transition">
+            Subscribe
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </button>
 
-                <button class="md:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-10 6h10" />
-                    </svg>
-                </button>
-            </div>
-        </nav>
+          <button class="md:hidden">
+            <img src="./assets/hamburger-menu.png" alt="Menu" class="w-6 h-6 cursor-pointer" />
+          </button>
+        </div>
+      </nav>
     </header>
-</body>
+
+    <section class="relative flex flex-col items-center justify-center text-center py-16 md:py-24 overflow-visible bg-transparent">
+      
+      <div class="absolute inset-0 z-0 flex items-center justify-center pointer-events-none">
+        <img src="./assets/hero-bg.png" alt="Wave Background" class="w-full h-auto object-cover opacity-60" />
+      </div>
+
+      <div class="relative z-10 flex flex-col items-center">
+        
+        <div class="relative w-48 h-48 md:w-72 md:h-72 rounded-full p-[2px] bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600">
+          <div class="w-full h-full rounded-full flex items-center justify-center bg-gradient-to-br from-yellow-400 via-pink-500 to-purple-600">
+            <img src="./assets/microphone.png" alt="Microphone" class="w-24 md:w-36" />
+          </div>
+          
+          <div class="absolute top-2 -right-2 md:top-6 md:-right-4 bg-[#00FFA3] text-[#1A0B2E] text-[10px] md:text-xs font-black px-4 py-1.5 rounded-full shadow-[0_0_20px_rgba(0,255,163,0.6)] z-20">
+            NEW
+          </div>
+        </div>
+
+        <h1 class="mt-8 text-[36px] md:text-[60px] font-black text-white">
+          TechWave
+        </h1>
+
+        <p class="mt-4 text-gray-300 text-sm md:text-base max-w-[400px] px-4">
+          Your daily dose of tech insights, productivity hacks, and personal growth
+        </p>
+
+        <div class="mt-10 flex flex-row items-center justify-center gap-4">
+          <button class="bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-500 rounded-full font-bold flex items-center justify-center gap-2 cursor-pointer transition-transform hover:scale-105 w-[201px] md:w-[200px] h-[44px] text-white">
+            <img src="./assets/spotify.png" alt="" class="w-4 h-4" />
+            <span class="whitespace-nowrap font-semibold text-xs">Listen On Spotify</span>
+          </button>
+
+          <button class="border-2 border-[#00FFA3] text-[#00FFA3] rounded-full font-bold flex items-center justify-center gap-2 cursor-pointer hover:bg-[#00FFA3]/10 transition w-[201px] md:w-[200px] h-[44px]">
+            <img src="./assets/message.png" alt="" class="w-4 h-4" />
+            <span class="font-semibold text-xs">Subscribe</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
